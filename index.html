@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio | Axel</title>
+  </head>
+  <body class="bg-slate-900 text-slate-100">
+    <div id="app">
+      <nav class="fixed top-5 left-1/2 -translate-x-1/2 z-50 bg-white/5 backdrop-blur-xl border border-white/10 p-2 rounded-full flex gap-2 items-center">
+        <a href="#home" class="px-5 py-2 text-sm font-medium rounded-full transition-all duration-300">Accueil</a>
+        <a href="#experience" class="px-5 py-2 text-sm font-medium rounded-full transition-all duration-300">Expériences</a>
+        <a href="#tech" class="px-5 py-2 text-sm font-medium rounded-full transition-all duration-300">Technos</a>
+      </nav>
+
+      <section id="home" class="min-h-screen flex flex-col justify-center items-center px-4 relative overflow-hidden">
+        <div data-aos="fade-down" data-aos-delay="500" class="mb-6 px-4 py-1 border border-blue-500/30 bg-blue-500/10 rounded-full text-blue-400 text-xs font-mono">
+          📍 Actuellement à Montréal, Canada
+        </div>
+
+        <div data-aos="zoom-out" data-aos-duration="1500" class="text-center z-10">
+          <img src="/axel.png" class="w-32 h-32 rounded-full border-4 border-blue-500 mb-8 mx-auto object-cover shadow-[0_0_30px_rgba(59,130,246,0.5)]" alt="Axel">
+    
+        <h1 class="text-6xl md:text-8xl font-black tracking-tighter mb-6">
+          AXEL <span class="text-blue-500 italic font-light text-5xl md:text-7xl">PTJN</span>
+        </h1>
+
+        <div class="space-y-4">
+        <p class="text-xl md:text-2xl text-slate-200 font-medium max-w-2xl mx-auto leading-relaxed">
+          Étudiant en 4ème année à <span class="text-blue-400">Epitech</span>, 
+          actuellement en spécialisation Business Management à <span class="text-red-500">McGill</span>.
+        </p>
+      
+        <p class="text-lg text-slate-400 max-w-xl mx-auto leading-relaxed italic">
+          Passionné par l'intersection entre le <span class="text-slate-200">code</span>, 
+          l'<span class="text-slate-200">Intelligence Artificielle</span> et l'analyse de <span class="text-slate-200">données</span>.
+        </p>
+        </div>
+
+        <div class="mt-12" data-aos="fade-up" data-aos-delay="800">
+          <a href="#experience" class="bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-full font-bold transition-all shadow-lg hover:shadow-blue-500/40">
+           Découvrir mon profil
+          </a>
+        </div>
+      </div>
+
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full -z-0"></div>
+    </section>
+
+  <section id="experience" class="py-32 px-6 max-w-5xl mx-auto">
+    <h2 class="text-4xl font-bold mb-16" data-aos="fade-right">Expériences</h2>
+
+    <div class="grid gap-12"> 
+    
+      <div data-aos="fade-up" class="group relative p-8 rounded-3xl bg-slate-800/50 border border-slate-700 hover:border-blue-500/50 transition-all duration-500">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-2xl font-bold group-hover:text-blue-400 transition">Stage Data / IA</h3>
+          <span class="text-sm font-mono text-slate-500">Mars - Juillet 2025</span>
+        </div>
+        <a href="https://www.renault-trucks.fr/" target="_blank" 
+          class="inline-flex items-center gap-2 mb-4 px-3 py-1.5 rounded-xl bg-slate-400/5 border border-slate-700/50 text-slate-400 
+                hover:bg-blue-500/10 hover:border-blue-500/50 hover:text-blue-400 
+                hover:scale-105 hover:shadow-lg hover:shadow-blue-500/10 
+                transition-all duration-300 group/company cursor-pointer">
+  
+              <span class="iconify text-xl" data-icon="cbi:renault"></span>
+            <p class="text-sm italic font-medium">Renault Trucks</p>
+  
+          <span class="iconify text-xs opacity-0 group-hover/company:opacity-100 transition-opacity" data-icon="lucide:external-link"></span>
+        </a>
+        <p class="text-slate-300">Recherche du client unique dans la base de données, à partir de critères business, et création d'un script pour automatiser le processus.</p>
+  
+        <div class="flex flex-wrap gap-2 mt-6 cursor-default">
+          <span class="px-3 py-1 text-xs font-bold rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 hover:scale-110 hover:bg-blue-500/20 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">Python</span>
+          <span class="px-3 py-1 text-xs font-bold rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 hover:scale-110 hover:bg-blue-500/20 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/20">SQL</span>
+          <span class="px-3 py-1 text-xs font-bold rounded-full bg-indigo-500/10 text-orange-300 border border-indigo-500/20 hover:scale-110 hover:bg-blue-500/20 transition-all duration-300 hover:shadow-lg hover:shadow-indigo-500/20">Automatisation</span>
+        </div>
+      </div>
+
+      <div data-aos="fade-up" class="group relative p-8 rounded-3xl bg-slate-800/50 border border-slate-700 hover:border-blue-500/50 transition-all duration-500">
+        <div class="flex justify-between items-start mb-4">
+          <h3 class="text-2xl font-bold group-hover:text-blue-400 transition">Stage Marketing Digital</h3>
+          <span class="text-sm font-mono text-slate-500">Septembre - Décembre 2024</span>
+        </div>
+        <a href="https://www.renault-trucks.fr/" target="_blank" 
+          class="inline-flex items-center gap-2 mb-4 px-3 py-1.5 rounded-xl bg-slate-400/5 border border-slate-700/50 text-slate-400 
+                hover:bg-blue-500/10 hover:border-blue-500/50 hover:text-blue-400 
+                hover:scale-105 hover:shadow-lg hover:shadow-blue-500/10 
+                transition-all duration-300 group/company cursor-pointer">
+  
+              <span class="iconify text-xl" data-icon="cbi:renault"></span>
+            <p class="text-sm italic font-medium">Renault Trucks</p>
+  
+          <span class="iconify text-xs opacity-0 group-hover/company:opacity-100 transition-opacity" data-icon="lucide:external-link"></span>
+        </a>
+        <p class="text-slate-300">Création de page web pour les véhicules, et amélioration continue du site.</p>
+
+        <div class="flex flex-wrap gap-2 mt-6 cursor-default">
+          <span class="px-3 py-1 text-xs font-bold rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 hover:scale-110 hover:bg-blue-500/20 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">HTML</span>
+          <span class="px-3 py-1 text-xs font-bold rounded-full bg-cyan-500/10 text-green-400 border border-cyan-500/20 hover:scale-110 hover:bg-blue-500/20 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/20">CSS</span>
+          <span class="px-3 py-1 text-xs font-bold rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 hover:scale-110 hover:bg-blue-500/20 transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/20">Marketing</span>
+        </div>
+      </div>
+
+    </div> </section>
+
+      <section id="tech" class="py-32 px-6 bg-slate-950/50">
+        <div class="max-w-5xl mx-auto text-center">
+          <h2 class="text-4xl font-bold mb-16" data-aos="fade-up">Stack & Outils</h2>
+    
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      
+              <div data-aos="zoom-in" data-aos-delay="100" 
+                  class="group p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-blue-500/50 hover:shadow-[0_0_30px_rgba(59,130,246,0.1)] transition-all duration-500">
+              <span class="iconify text-5xl mx-auto mb-4 text-slate-400 group-hover:text-blue-500 transition-colors duration-500" data-icon="logos:python"></span>
+              <p class="font-bold text-slate-300 group-hover:text-white transition-colors">Python</p>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-delay="200" 
+                class="group p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-emerald-500/50 hover:shadow-[0_0_30px_rgba(16,185,129,0.1)] transition-all duration-500">
+              <span class="iconify text-5xl mx-auto mb-4 text-slate-400 group-hover:text-emerald-500 transition-colors duration-500" data-icon="logos:mysql"></span>
+              <p class="font-bold text-slate-300 group-hover:text-white transition-colors">MySQL</p>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-delay="300" 
+                class="group p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-orange-500/50 hover:shadow-[0_0_30px_rgba(249,115,22,0.1)] transition-all duration-500">
+              <span class="iconify text-5xl mx-auto mb-4 text-slate-400 group-hover:text-orange-500 transition-colors duration-500" data-icon="logos:git-icon"></span>
+              <p class="font-bold text-slate-300 group-hover:text-white transition-colors">Git</p>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-delay="400" 
+                class="group p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-sky-500/50 hover:shadow-[0_0_30px_rgba(14,165,233,0.1)] transition-all duration-500">
+              <span class="iconify text-5xl mx-auto mb-4 text-slate-400 group-hover:text-sky-500 transition-colors duration-500" data-icon="logos:visual-studio-code"></span>
+              <p class="font-bold text-slate-300 group-hover:text-white transition-colors">VS Code</p>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-delay="500" 
+                class="group p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-sky-500/50 hover:shadow-[0_0_30px_rgba(14,165,233,0.1)] transition-all duration-500">
+              <span class="iconify text-5xl mx-auto mb-4 text-slate-400 group-hover:text-blue-600 transition-colors duration-500" data-icon="vscode-icons:file-type-cpp3"></span>
+              <p class="font-bold text-slate-300 group-hover:text-white transition-colors">C++</p>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-delay="600" 
+                class="group p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-sky-500/50 hover:shadow-[0_0_30px_rgba(14,165,233,0.1)] transition-all duration-500">
+              <span class="iconify text-5xl mx-auto mb-4 text-slate-400 group-hover:text-blue-600 transition-colors duration-500" data-icon="vscode-icons:file-type-c2"></span>
+              <p class="font-bold text-slate-300 group-hover:text-white transition-colors">C</p>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-delay="700" 
+                class="group p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-sky-500/50 hover:shadow-[0_0_30px_rgba(14,165,233,0.1)] transition-all duration-500">
+              <span class="iconify text-5xl mx-auto mb-4 text-slate-400 group-hover:text-blue-600 transition-colors duration-500" data-icon="vscode-icons:file-type-docker2"></span>
+              <p class="font-bold text-slate-300 group-hover:text-white transition-colors">Docker</p>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-delay="800" 
+                class="group p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-sky-500/50 hover:shadow-[0_0_30px_rgba(14,165,233,0.1)] transition-all duration-500">
+              <span class="iconify text-5xl mx-auto mb-4 text-slate-400 group-hover:text-blue-600 transition-colors duration-500" data-icon="vscode-icons:file-type-go"></span>
+              <p class="font-bold text-slate-300 group-hover:text-white transition-colors">Go</p>
+            </div>
+
+            <div data-aos="zoom-in" data-aos-delay="900" 
+                class="group p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-sky-500/50 hover:shadow-[0_0_30px_rgba(14,165,233,0.1)] transition-all duration-500">
+              <span class="iconify text-5xl mx-auto mb-4 text-slate-400 group-hover:text-blue-600 transition-colors duration-500" data-icon="skill-icons:mongodb"></span>
+              <p class="font-bold text-slate-300 group-hover:text-white transition-colors">MongoDB</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="py-20 px-6 border-t border-slate-800 text-center">
+      <h2 class="text-2xl font-bold mb-8">On travaille ensemble ?</h2>
+      <div class="flex justify-center gap-6">
+        <a href="https://www.linkedin.com/in/axel-petitjean-645237266/" target="_blank" class="p-4 bg-slate-800 rounded-full hover:bg-blue-600 transition-all duration-300 hover:-translate-y-2">
+          <span class="iconify text-2xl" data-icon="lucide:linkedin"></span>
+        </a>
+       <a href="mailto:axel.petitjean@epitech.eu" class="p-4 bg-slate-800 rounded-full hover:bg-emerald-600 transition-all duration-300 hover:-translate-y-2">
+          <span class="iconify text-2xl" data-icon="lucide:mail"></span>
+        </a>
+        <a href="https://github.com/AxelPtjn" target="_blank" class="p-4 bg-slate-800 rounded-full hover:bg-slate-700 transition-all duration-300 hover:-translate-y-2">
+          <span class="iconify text-2xl" data-icon="lucide:github"></span>
+        </a>
+      </div>
+      <p class="mt-12 text-slate-500 text-sm font-mono">© 2026 Axel Ptjn</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
