@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
-/* Garde tes styles personnalisés en dessous */
+/* Garde tes styles personnalisés en dessous
 body {
   @apply bg-slate-900 text-white overflow-x-hidden;
-}
+}*/
 
 html {
   scroll-behavior: smooth;
@@ -18,4 +18,26 @@ html {
 /* Transition douce pour tous les liens de la nav */
 nav a {
   @apply transition-all duration-300 ease-in-out px-4 py-2 rounded-full;
+}
+
+body {
+  /* On définit une transition sur la couleur de fond */
+  transition: background-color 1.2s cubic-bezier(0.23, 1, 0.32, 1);
+  background-color: #0f172a; /* Couleur initiale (Slate 900) */
+  will-change: background-color;
+}
+
+/* On s'assure que les sections sont transparentes pour laisser voir le fond du body */
+section {
+  background-color: transparent !important;
+}
+
+/* Optionnel : un petit effet de "vignettage" pour que le centre soit plus clair que les bords */
+#app::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 0%, rgba(0,0,0,0.4) 100%);
+  pointer-events: none;
+  z-index: 1;
 }
