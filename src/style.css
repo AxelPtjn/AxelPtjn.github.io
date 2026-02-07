@@ -41,3 +41,17 @@ section {
   pointer-events: none;
   z-index: 1;
 }
+
+/* Empêche le défilement du site quand la modale est ouverte */
+.modal-open {
+  overflow: hidden;
+}
+
+/* On s'assure que la modale est au-dessus de tout */
+#project-modal {
+  will-change: opacity;
+}
+
+#modal-content {
+  will-change: transform;
+}

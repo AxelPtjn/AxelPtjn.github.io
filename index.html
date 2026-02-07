@@ -121,67 +121,98 @@
         </div>
       </div>
     </section>
-
-    <section id="projects" data-color="#2e1065" class="py-32 px-6 max-w-5xl mx-auto">
-      <h2 class="text-4xl font-bold mb-16" data-aos="fade-right">Projets</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div data-aos="zoom-in" class="p-8 rounded-3xl bg-slate-800/30 border border-slate-700 hover:border-blue-500/50 transition-all group">
-          <div class="flex justify-between mb-4">
-            <span class="iconify text-4xl text-blue-500" data-icon="lucide:bot"></span>
-            <a href="#" class="text-slate-500 hover:text-white transition"><span class="iconify text-2xl" data-icon="lucide:github"></span></a>
-          </div>
-          <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400">Area</h3>
-          <p class="text-slate-400 text-sm mb-6">Area was a web project. The objective was to implement some action-reaction with OAuth2 service.</p>
-          <div class="flex gap-3">
-            <span class="text-[10px] font-bold uppercase tracking-widest text-blue-400">OAuth2</span>
-            <span class="text-[10px] font-bold uppercase tracking-widest text-blue-400">Mobile</span>
-            <span class="text-[10px] font-bold uppercase tracking-widest text-blue-400">Web</span>
-            <span class="text-[10px] font-bold uppercase tracking-widest text-blue-400">Automatisation</span>
-          </div>
-        </div>
-        <div data-aos="zoom-in" data-aos-delay="200" class="p-8 rounded-3xl bg-slate-800/30 border border-slate-700 hover:border-emerald-500/50 transition-all group">
-          <div class="flex justify-between mb-4">
-            <span class="iconify text-4xl text-emerald-500" data-icon="lucide:database"></span>
-            <a href="#" class="text-slate-500 hover:text-white transition"><span class="iconify text-2xl" data-icon="lucide:github"></span></a>
-          </div>
-          <h3 class="text-xl font-bold mb-2 group-hover:text-emerald-400">R-Type</h3>
-          <p class="text-slate-400 text-sm mb-6">Create a game engine, and reporduce some games to play on it.</p>
-          <div class="flex gap-3">
-            <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-400">C++</span>
-            <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-400">Project Architecture</span>
-            <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-400">Video Games</span>
-          </div>
-        </div>
-
-        <div data-aos="zoom-in" data-aos-delay="200" class="p-8 rounded-3xl bg-slate-800/30 border border-slate-700 hover:border-emerald-500/50 transition-all group">
-          <div class="flex justify-between mb-4">
-            <span class="iconify text-4xl text-emerald-500" data-icon="lucide:database"></span>
-            <a href="#" class="text-slate-500 hover:text-white transition"><span class="iconify text-2xl" data-icon="lucide:github"></span></a>
-          </div>
-          <h3 class="text-xl font-bold mb-2 group-hover:text-emerald-400">Aether</h3>
-          <p class="text-slate-400 text-sm mb-6">The objective was to create a search engine, using ia to improve search results.</p>
-          <div class="flex gap-3">
-            <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-400">Python</span>
-            <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-400">IA</span>
-          </div>
-        </div>
-
-        <div data-aos="zoom-in" data-aos-delay="200" class="p-8 rounded-3xl bg-slate-800/30 border border-slate-700 hover:border-blue-500/50 transition-all group">
-          <div class="flex justify-between mb-4">
-            <span class="iconify text-4xl text-blue-500" data-icon="lucide:database"></span>
-            <a href="#" class="text-slate-500 hover:text-white transition"><span class="iconify text-2xl" data-icon="lucide:github"></span></a>
-          </div>
-          <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400">Plazza</h3>
-          <p class="text-slate-400 text-sm mb-6">Using the concurent programming, we needed to manage a "pizzeria" with multiple threads.</p>
-          <div class="flex gap-3">
-            <span class="text-[10px] font-bold uppercase tracking-widest text-blue-400">C++</span>
-            <span class="text-[10px] font-bold uppercase tracking-widest text-blue-400">Concurent Programming</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
   
+      <section id="projects" data-color="#2e1065" class="py-32 px-6 max-w-5xl mx-auto">
+        <h2 class="text-4xl font-bold mb-16" data-aos="fade-right">Projets</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+    
+          <div data-aos="zoom-in" class="project-card cursor-pointer p-8 rounded-3xl bg-slate-800/30 border border-slate-700 hover:border-blue-500/50 transition-all group"
+              data-title="Area"
+              data-full="Area est un projet Epitech de 3ème année. L'objectif était de créer une plateforme d'automatisation (style IFTTT). J'ai géré l'authentification OAuth2 pour connecter des services comme Spotify, GitHub et Discord, permettant de créer des réactions automatiques basées sur des événements précis."
+              data-tags="OAuth2, Mobile, Web, Automatisation"
+              data-icon="lucide:bot"
+              data-color="text-blue-500"
+              data-github="#">
+            <div class="flex justify-between mb-4">
+              <span class="iconify text-4xl text-blue-500" data-icon="lucide:bot"></span>
+              <span class="text-slate-500 group-hover:text-white transition"><span class="iconify text-2xl" data-icon="lucide:github"></span></span>
+            </div>
+            <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400">Area</h3>
+            <p class="text-slate-400 text-sm mb-6">Area was a web project. The objective was to implement some action-reaction with OAuth2 service.</p>
+            <div class="flex gap-3">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-blue-400">OAuth2</span>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-blue-400">Mobile</span>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-blue-400">Web</span>
+            </div>
+          </div>
+
+          <div data-aos="zoom-in" data-aos-delay="200" class="project-card cursor-pointer p-8 rounded-3xl bg-slate-800/30 border border-slate-700 hover:border-emerald-500/50 transition-all group"
+              data-title="R-Type"
+              data-full="Développement d'un moteur de jeu complet en C++ pour un shooter spatial multijoueur. Ce projet met en avant l'architecture ECS (Entity Component System) et la communication réseau UDP pour garantir une fluidité maximale entre les joueurs."
+              data-tags="C++, Project Architecture, Video Games, Réseaux"
+              data-icon="lucide:database"
+              data-color="text-emerald-500"
+              data-github="#">
+            <div class="flex justify-between mb-4">
+              <span class="iconify text-4xl text-emerald-500" data-icon="lucide:database"></span>
+              <span class="text-slate-500 group-hover:text-white transition"><span class="iconify text-2xl" data-icon="lucide:github"></span></span>
+            </div>
+            <h3 class="text-xl font-bold mb-2 group-hover:text-emerald-400">R-Type</h3>
+            <p class="text-slate-400 text-sm mb-6">Create a game engine, and reproduce some games to play on it.</p>
+            <div class="flex gap-3">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-400">C++</span>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-400">Video Games</span>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-400">Réseaux</span>
+            </div>
+          </div>
+
+          <div data-aos="zoom-in" data-aos-delay="300" class="project-card cursor-pointer p-8 rounded-3xl bg-slate-800/30 border border-slate-700 hover:border-emerald-500/50 transition-all group"
+              data-title="Aether"
+              data-full="Création d'un moteur de recherche intelligent en Python, utilisant des techniques de NLP pour améliorer la pertinence des résultats. Le projet intègre également une interface web pour faciliter les recherches et l'analyse des données."
+              data-tags="Python, NLP, Search Engine"
+              data-icon="lucide:database"
+              data-color="text-emerald-500"
+              data-github="#">
+            <div class="flex justify-between mb-4">
+              <span class="iconify text-4xl text-emerald-500" data-icon="lucide:database"></span>
+              <span class="text-slate-500 group-hover:text-white transition"><span class="iconify text-2xl" data-icon="lucide:github"></span></span>
+            </div>
+            <h3 class="text-xl font-bold mb-2 group-hover:text-emerald-400">Aether</h3>
+            <p class="text-slate-400 text-sm mb-6">The objective was to create a search engine, using ia to improve search results.</p>
+            <div class="flex gap-3">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-400">Python</span>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-400">NLP</span>
+            </div>
+          </div>
+
+          <div data-aos="zoom-in" data-aos-delay="400" class="project-card cursor-pointer p-8 rounded-3xl bg-slate-800/30 border border-slate-700 hover:border-blue-500/50 transition-all group"
+              data-title="Plazza"
+              data-full="Using the concurent programming, we needed to manage a 'pizzeria' with multiple threads."
+              data-tags="C++, Concurrent Programming, Threads"
+              data-icon="lucide:database"
+              data-color="text-blue-500"
+              data-github="#">
+            <div class="flex justify-between mb-4">
+              <span class="iconify text-4xl text-blue-500" data-icon="lucide:database"></span>
+              <span class="text-slate-500 group-hover:text-white transition"><span class="iconify text-2xl" data-icon="lucide:github"></span></span>
+            </div>
+            <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400">Plazza</h3>
+            <p class="text-slate-400 text-sm mb-6">Using the concurent programming, we needed to manage a "pizzeria" with multiple threads.</p>
+            <div class="flex gap-3">
+              <span class="text-[10px] font-bold uppercase tracking-widest text-blue-400">C++</span>
+              <span class="text-[10px] font-bold uppercase tracking-widest text-blue-400">Concurrent Programming</span>
+            </div>
+          </div>
+
+          </div>
+      </section>
+
+
+
+
+
+
+
 
     <section id="education" data-color="#1e1b4b" class="py-32 px-6 max-w-5xl mx-auto">
       <h2 class="text-4xl font-bold mb-16" data-aos="fade-right">Éducation</h2>
@@ -294,6 +325,17 @@
     </footer>
 
     <script type="module" src="/src/main.js"></script>
+
+  <div id="project-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-300">
+    <div class="absolute inset-0 bg-slate-950/80 backdrop-blur-md" id="modal-backdrop"></div>
+  
+    <div class="relative bg-slate-900 border border-slate-700 w-full max-w-2xl p-8 md:p-12 rounded-[2rem] shadow-2xl transform scale-90 transition-transform duration-300" id="modal-content">
+      <button id="close-modal" class="absolute top-6 right-6 p-2 rounded-full bg-slate-800 text-slate-400 hover:text-white transition-colors">
+        <span class="iconify text-2xl" data-icon="lucide:x"></span>
+      </button>
+
+     <div id="modal-body"></div>
+    </div>
   </div>
 </body>
 </html>
