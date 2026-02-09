@@ -108,3 +108,67 @@ document.addEventListener('keydown', (e) => {
     closeModal();
   }
 });
+
+const translations = {
+  fr: {
+    "nav-home": "Accueil",
+    "nav-experience": "Expériences",
+    "nav-projects": "Projets",
+    "nav-education": "Education",
+    "nav-tech": "Technos",
+    "nav-contact": "Contact",
+    "hero-location": "📍 Actuellement à Montréal, Canada",
+    "hero-subtitle": "Étudiant en 4ème année à Epitech Lyon, spécialisation Business Management à McGill Montréal.",
+    "hero-description": "Passionné par le code, l'IA et l'analyse de données.",
+    "hero-btn": "Découvrir mon profil",
+    "exp-title": "Expériences",
+    "exp-date-rt1": "Mars - Juillet 2025",
+    "exp-desc-rt1": "Recherche du client unique dans les base de données, à partir de critères business, et création d'un script pour automatiser le processus.",
+    "exp-date-rt2": "Septembre - Décembre 2024",
+    "exp-desc-rt2": "Création de pages web optimisées SEO pour les véhicules, et amélioration continue du site.",
+    "proj-title": "Projets",
+    "edu-title": "Éducation",
+    "contact-title": "On travaille ensemble ?",
+  },
+  en: {
+    "nav-home": "Home",
+    "nav-experience": "Experiences",
+    "nav-projects": "Projects",
+    "nav-education": "Education",
+    "nav-tech": "Stack",
+    "nav-contact": "Contact",
+    "hero-location": "📍 Currently in Montreal, Canada",
+    "hero-subtitle": "4th year student at Epitech Lyon, specializing in Business Management at McGill Montreal.",
+    "hero-description": "Passionate about coding, AI, and data analysis.",
+    "hero-btn": "View my profile",
+    "exp-title": "Experiences",
+    "exp-date-rt1": "March - July 2025",
+    "exp-desc-rt1": "Customer data matching based on business criteria and script creation for process automation.",
+    "exp-date-rt2": "September - December 2024",
+    "exp-desc-rt2": "Creation of SEO-optimized web pages for vehicles and continuous website improvement.",
+    "proj-title": "Projects",
+    "edu-title": "Education",
+    "contact-title": "Let's work together!",
+  }
+};
+
+let currentLang = localStorage.getItem('lang') || 'fr';
+
+function updateText() {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    // On vérifie si la clé existe pour éviter le "undefined"
+    if (translations[currentLang][key]) {
+      el.innerText = translations[currentLang][key];
+    }
+  });
+  document.getElementById('lang-text').innerText = currentLang;
+}
+
+document.getElementById('lang-switch').addEventListener('click', () => {
+  currentLang = currentLang === 'fr' ? 'en' : 'fr';
+  localStorage.setItem('lang', currentLang);
+  updateText();
+});
+
+updateText();
