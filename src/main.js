@@ -118,7 +118,10 @@ const translations = {
     "nav-tech": "Technos",
     "nav-contact": "Contact",
     "hero-location": "📍 Actuellement à Montréal, Canada",
-    "hero-subtitle": "Étudiant en 4ème année à Epitech Lyon, spécialisation Business Management à McGill Montréal.",
+    "hero-subtitle": "Étudiant en 4ème année à ",
+    "hero-subtitle2": "Epitech Lyon",
+    "hero-subtitle3": ", spécialisation Business Management à",
+    "hero-subtitle4": " McGill Montréal",
     "hero-description": "Passionné par le code, l'IA et l'analyse de données.",
     "hero-btn": "Découvrir mon profil",
     "exp-title": "Expériences",
@@ -129,6 +132,9 @@ const translations = {
     "proj-title": "Projets",
     "edu-title": "Éducation",
     "contact-title": "On travaille ensemble ?",
+    "internship-title-rt1": "Stage Marketing Digital",
+    "internship-title-rt2": "Stage Data / IA",
+    "exp-date-epitech": "Depuis Spetembre 2022",
   },
   en: {
     "nav-home": "Home",
@@ -138,7 +144,10 @@ const translations = {
     "nav-tech": "Stack",
     "nav-contact": "Contact",
     "hero-location": "📍 Currently in Montreal, Canada",
-    "hero-subtitle": "4th year student at Epitech Lyon, specializing in Business Management at McGill Montreal.",
+    "hero-subtitle": "4th year student at ",
+    "hero-subtitle2": "Epitech Lyon",
+    "hero-subtitle3": ", specializing in Business Management at",
+    "hero-subtitle4": " McGill Montreal",
     "hero-description": "Passionate about coding, AI, and data analysis.",
     "hero-btn": "View my profile",
     "exp-title": "Experiences",
@@ -149,6 +158,9 @@ const translations = {
     "proj-title": "Projects",
     "edu-title": "Education",
     "contact-title": "Let's work together!",
+    "internship-title-rt1": "Digital Marketing Internship",
+    "internship-title-rt2": "Data / AI Internship",
+    "exp-date-epitech": "Since September 2022",
   }
 };
 
